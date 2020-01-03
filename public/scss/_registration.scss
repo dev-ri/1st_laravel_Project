@@ -5,12 +5,8 @@
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
-        // background-color: #f1f1f1;
-        // margin-bottom: 10px;
-        // border-radius: 10px;
         padding: 10px;
         border-bottom: 1px solid #9b9b9b;
-        border-top: 1px solid #9b9b9b;
 
         div{
             display: flex;
@@ -36,6 +32,9 @@
             font-weight: 700;
             opacity: 0.9;
         }
+    }
+    li:nth-child(1){
+        border-top: 1px solid #9b9b9b;
     }
     li:nth-child(1), li:last-child{
         background-color: #f1f1f1;

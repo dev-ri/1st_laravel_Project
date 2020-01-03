@@ -29,6 +29,7 @@ html {
   transition: -webkit-box-shadow 300ms;
   transition: box-shadow 300ms;
   transition: box-shadow 300ms, -webkit-box-shadow 300ms;
+  margin: 30px;
 }
 
 .btn:hover {
@@ -40,16 +41,22 @@ html {
 body {
   width: 100%;
   background-color: #fff;
+  padding-top: 50px;
 }
 
 .navbar-light {
-  position: fixed;
   z-index: 1000;
   width: 100%;
   top: 0;
   left: 0;
   background-color: #fff;
   border-bottom: 1px solid #9b9b9b;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-light {
+    position: fixed;
+  }
 }
 
 .course-list {
@@ -66,7 +73,6 @@ body {
       grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
   padding: 10px;
   border-bottom: 1px solid #9b9b9b;
-  border-top: 1px solid #9b9b9b;
 }
 
 .course-list li div {
@@ -108,13 +114,12 @@ body {
   opacity: 0.9;
 }
 
-.course-list li:nth-child(1), .course-list li:last-child {
-  background-color: #f1f1f1;
+.course-list li:nth-child(1) {
+  border-top: 1px solid #9b9b9b;
 }
 
-.container {
-  margin-top: 50px;
-  padding: 0 10px;
+.course-list li:nth-child(1), .course-list li:last-child {
+  background-color: #f1f1f1;
 }
 
 .box {
@@ -170,10 +175,6 @@ body {
   color: #414141;
 }
 
-.box .btn {
-  margin-top: 30px;
-}
-
 .box .forgot-account-text {
   font-size: 14px;
   color: #414141;
@@ -186,7 +187,7 @@ body {
 }
 
 .box .bottom-log-text {
-  margin-top: 50px;
+  margin-top: 20px;
   font-weight: 400;
   color: #414141;
   -webkit-transition: color 300ms;
