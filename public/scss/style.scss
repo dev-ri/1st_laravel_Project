@@ -29,34 +29,35 @@ html{
     }
 }
 body{
-    min-height: 100vh;
     width: 100%;
-    background-color: #e2e2e2;
-    .container{
-        display: flex;
-        justify-content: center;
-    }
+    background-color: #fff;
 }
 
 .navbar-light{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
     background-color: #fff;
+    border-bottom: 1px solid #9b9b9b;
 }
 
+@import"./registration";
+
+.container{
+    margin-top: 50px;
+    padding: 0 10px;
+}
 .box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #fff;
-    width: 600px;
-    border-radius: 10px;
-    padding: 50px 20px;
-    margin: 20px;
     .title-text{
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 700;
         color: #414141;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
     .input-box{
         display: flex;
@@ -80,8 +81,9 @@ body{
         }
     }
     .btn{
-        margin: 30px 0;
+        margin-top: 30px;
     }
+    
     .forgot-account-text{
         font-size: 14px;
         color: #414141;
@@ -92,7 +94,7 @@ body{
         }
     }
     .bottom-log-text{
-        margin-top: 40px;
+        margin-top: 50px;
         font-weight: 400;
         color: #414141;
         transition: color 300ms;
@@ -102,3 +104,4 @@ body{
         }
     }
 }
+
